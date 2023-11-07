@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,900;1,300;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+#container{
+    @include cabeca();
+}
+nav{
+    @include nave();
+}
+ul a{
+    line-height: 191%;
+    color: $primeira_cor_font;
+    @include menu();
+}
+.icon{
+    @include icone();
+}
+.titulos{
+    @include titulos();
+}
+#nome-criador{
+    @include NomeCriador();
+}
+// CORPO DO SITE
+#mae{
+    @include mae();
+}
+#pai{
+    @include pai();
+}
+.texto-apresentacao{
+    animation: go-back 1s;
+    @include TextoApresentacao();
+}
+#imagem-da-fortaleza{
+    @include ImagemDaFortaleza()
+}
+.title-dos-texto{
+    padding-bottom: 4%;
+    @include TitulosDentroCorpo();
+}
+.text{
+    @include text();
+}
+.text-segundo{
+    width: 37%;
+    margin-left: 63%;
+    margin-top: -45%;
+    @include text();
+}
+.text-terceiro{
+    margin-top: 38px;
+    @include text();
+}
+.text-quarto{
+    @include texteParteDois()
+}
+.pai-dos-titles-text{
+    margin-top: 42%;
+}
+.segunda-imagem{
+    width: 61%;
+    border-radius: 2%;
+}
+.first{
+    margin-top: 90%;
+}
+// ANIMAÇÃO
+#Inicio{
+    animation: go-back 1s;
+}
+#Antecedentes{
+    margin-top: 10%;
+    animation: go-back 1s;
+}
+#Construção{
+    margin-top: 52%;
+    animation: go-back 1s;
+}
+#Colônia-ao-Império{
+    animation: go-back 1s;
+}
+#Periodo{
+    animation: go-back 1s;
+}
+#constituição{
+    margin-top: 48%;
+    animation: go-back 1s;
+}
+#caracter{
+    margin-top: 60%;
+    animation: go-back 1s;
+}
+/*Teste de animação*/
+@keyframes go-back {
+    from {
+      transform: translateY(100px);
+    }
+    to {
+      transform: translateY(0);
+    }
+}
+span{
+    display: none;
+}
+#Quarto-texto{
+    @include quarto-text();
+}
+.texto-quinto{
+    @include quarto-text();
+}
+.text-sexto{
+    @include quarto-text();
+}
+.text-setimo{
+    @include quarto-text();
+}
+
+
+
+// MOBILE
+@media only screen and (max-width: 410px), only screen and (max-device-width: 996px) {
+    body{
+        overflow-x: hidden;
+    }
+    /*BUTTON MENU*/
+    span {
+        display: grid;
+        z-index: 4;
+    }
+    .menu-mobile ul li {
+        font-size: 14px;
+        display: block;
+        border-bottom: 1px solid rgba(0,0,0,.1);
+    }
+    .menu-mobile ul li a {
+        display: block;
+        padding: 12px;
+        text-decoration: none;
+        color: #fff;
+    }
+    .menu-mobile ul li a:hover {
+        background-color: rgba(0,0,0,.1);
+    }
+    .btn-menu {
+        width: 9%;
+        height: 3%;
+        position: absolute;
+        margin: -1px 0px 0px -5%;
+        padding: 12px 10px 7px 7px;
+        background-color: #002580;
+        cursor: pointer;
+        transition-duration: 0.3s;
+        -webkit-transition-duration: 0.3s;
+        -moz-transition-duration: 0.3s;
+    }
+    .btn-menu span {
+        height: 3px;
+        display: block;
+        margin-left: 5px;
+        background-color: #fff;
+    }
+    .menu-mobile {transform: translateX(-270px);}
+    .btn-menu {transform: translateX(0);}
+    .btn-menu-active .menu-mobile {
+        transform: translateX(0);
+    }
+    .btn-menu-active .btn-menu {
+        transform: translateX(221px);
+        z-index: 4;
+        left: 0px;
+    }
+    #container{
+        width: 63%;
+        height: 100vh;
+        background: #002580;
+        margin-left: -3%;
+        text-align: center;
+        position: fixed;
+        overflow: hidden;
+        overflow-y: auto;
+        z-index: 100;
+        transition-duration: 0.3s;
+        -webkit-transition-duration: 0.3s;
+        -moz-transition-duration: 0.3s;
+    }
+    .titulos {
+        width: 77%;
+        margin-top: 173px;
+        margin-left: 13%;
+        font-family: "Rubik", sans-serif;
+        font-size: 122%;
+        font-weight: 500;
+    }
+    nav{
+        margin-top: 137%;
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        line-height: 274%;
+        margin-left: 34%;
+    }
+    ul a{
+        font-size: 18px;
+    }
+    #mae{
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+        display: flex;
+        z-index: 1;
+        position: fixed;
+        overflow: auto;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+    }
+    #pai{
+        width: 100%;
+        position: absolute;
+        display: flex;
+        height: 893%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+    }
+    #imagem-da-fortaleza {
+        border-radius: 3%;
+        width: 94%;
+        margin-left: 10px;
+        margin-top: 10%;
+    }
+    .texto-apresentacao {
+        animation: go-back 1s;
+        position: absolute;
+        font-family: "Rubik", sans-serif;
+        font-weight: 400;
+        font-size: larger;
+        line-height: 32px;
+        margin-left: 4%;
+        margin-top: 77%;
+    }
+    #Antecedentes {
+        width: 100%;
+        animation: go-back 1s;
+        margin-top: 118%;;
+    }
+    .text {
+        position: absolute;
+        font-family: "Rubik", sans-serif;
+        font-weight: 400;
+        font-size: larger;
+        width: 90%;
+        line-height: 30px;
+        margin-left: 4%;
+        margin-top: 11%;
+    }
+    #Construção {
+        animation: go-back 1s;
+        width: 100%;
+        margin-top: 238%;
+    }
+    .text-segundo {
+        width: 86%;
+        margin-left: 7%;
+        margin-top: 8%;
+        position: absolute;
+        font-family: "Rubik", sans-serif;
+        font-weight: 400;
+        font-size: larger;
+        line-height: 32px;
+    }
+    .text-terceiro {
+        margin-top: 516px;
+        width: 87%;
+        position: absolute;
+        font-family: "Rubik", sans-serif;
+        font-weight: 400;
+        font-size: larger;
+        line-height: 32px;
+        margin-left: 7%;
+    }
+    .segunda-imagem {
+        width: 94%;
+        margin-left: 10px;
+        border-radius: 2%;
+        margin-top: 10%;
+    }
+    #Colônia-ao-Império {
+        animation: go-back 1s;
+        width: 100%;
+        margin-top: 390%;
+    }
+    #Quarto-texto{
+        margin-top: 9%;
+        width: 87%;
+        position: absolute;
+        font-family: "Rubik", sans-serif;
+        font-weight: 400;
+        font-size: larger;
+        line-height: 32px;
+        margin-left: 7%;
+    }
+    .text-quarto {
+        margin-top: 145%;
+        position: absolute;
+        font-family: "Rubik", sans-serif;
+        font-weight: 300;
+        line-height: 23px;
+        width: 88%;
+        margin-left: 28px;
+    }
+    #Periodo {
+        animation: go-back 1s;
+        position: absolute;
+        width: 100%;
+        margin-top: 1561%;
+    }
+    .texto-quinto{
+        margin-top: 32px;
+        width: 87%;
+        position: absolute;
+        font-family: "Rubik", sans-serif;
+        font-weight: 400;
+        font-size: larger;
+        line-height: 32px;
+        margin-left: 7%;
+    }
+    #constituição {
+        animation: go-back 1s;
+        position: absolute;
+        margin-top: 1833%;
+        width: 100%;
+    }
+    .text-sexto{
+        margin-top: 39px;
+        width: 87%;
+        position: absolute;
+        font-family: "Rubik", sans-serif;
+        font-weight: 400;
+        font-size: larger;
+        line-height: 32px;
+        margin-left: 7%;
+    }
+    #caracter {
+        animation: go-back 1s;
+        width: 100%;
+        position: absolute;
+        margin-top: 2104%;
+    }
+    .text-setimo{
+        margin-top: 39px;
+        width: 87%;
+        position: absolute;
+        font-family: "Rubik", sans-serif;
+        font-weight: 400;
+        font-size: larger;
+        line-height: 32px;
+        margin-left: 7%;
+    }
+}
