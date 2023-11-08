@@ -10,6 +10,6 @@
 
 ## O que foi realizado
 <p>Foi realizado uma analise dentro da fortaleza de são josé e foi visto que não avisa acessibilidade para pessoas com deficiencia auditiva na hora da apresentação do monumento para esses turistas. Foi desenvolvido um site que contém os conteúdos da apresentação dentro do monumento com acesso a acessibilidade para turistas com deficiencia auditiva, foi usuado o sistema do governo federal <a href = "https://www.gov.br/governodigital/pt-br/vlibras/">(VLIBRAS) </a>para traduzir a apresentação para libras</p>
-![image 2](https://github.com/JenniferLucena/novo-repositorio/assets/128752403/ef0ec497-513d-411b-95c3-8acd8c7ca947)
+<img src="https://github.com/JenniferLucena/novo-repositorio/assets/128752403/ef0ec497-513d-411b-95c3-8acd8c7ca947"></img>
 ![image 1](https://github.com/JenniferLucena/novo-repositorio/assets/128752403/57507137-d9b6-4f5c-b9d4-44ea9b5ef66e)
 
